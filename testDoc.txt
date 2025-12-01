@@ -1,0 +1,78 @@
+Thought for a couple of seconds
+That’s a great approach—starting small lets you learn the end-to-end finetuning pipeline without burning through GPUs or waiting days for each experiment.
+ Here’s why it makes sense and how you’d do it:
+
+Why start with a 1 B-param model?
+
+Faster iteration: Finetuning—even with QLoRA—on a 1 B-param model can often finish in an hour or two, versus many hours (or days) on a 72 B-param model.
+
+Lower resource needs: You can run a 1 B model on a single 24–32 GB GPU at reasonable batch sizes, so you’ll get comfortable with the tooling.
+
+Proof of concept: You’ll iron out data formatting, prompt styles, schema‐injection methods, and evaluation metrics before scaling up.
+
+Picking a small “SQL-capable” base model
+
+Look for a model that’s either pre-trained on code or already has some SQL exposure. Examples:
+
+CodeLlama-1B Instruct
+
+starcoder-1B
+
+Qwen-1B-SQL (if the Qwen team releases a 1 B SQL-tuned variant)
+
+If you can’t find a 1 B SQL-specialist, pick a small code-oriented model and then finetune it on your NL→SQL pairs directly.
+
+Building your NL→SQL finetuning dataset
+
+For each example:
+
+json
+Copy
+Edit
+{
+  "instruction": "How many orders did user 42 place in 2024?",
+  "input": "<schema snippet: only the relevant tables & columns, formatted>",
+  "output": "SELECT COUNT(*) FROM orders WHERE user_id=42 AND order_date BETWEEN '2024-01-01' AND '2024-12-31';"
+}
+Include a variety of JOINs, filters, aggregations, date-ranges, etc.
+
+Keep the schema snippet concise—just the tables/columns your question needs
+
+
+Finetuning with QLoRA on a small model
+You can use the same pattern as for the 72 B workflow, just swapping in your smaller base model:
+
+bash
+Copy
+Edit
+pip install transformers accelerate peft bitsandbytes datasets
+python
+Copy
+Edit
+from transformers import AutoTokenizer, AutoModelForCausalLM
+from peft import LoraConfig, get_peft_model, TaskType
+# 1) Load your 1B model in 4-bit
+model = AutoModelForCausalLM.from_pretrained(
+  "your-1b-model-id",
+  load_in_4bit=True,
+  device_map="auto",
+  trust_remote_code=True,
+)
+# 2) Attach LoRA
+peft_config = LoraConfig(
+  task_type=TaskType.CAUSAL_LM,
+  inference_mode=False,
+  r=16, lora_alpha=32, lora_dropout=0.05
+)
+model = get_peft_model(model, peft_config)
+# 3) Tokenizer + dataset + Trainer → train just as before
+Use small batch sizes (1–2) with gradient accumulation.
+
+Run 2–3 epochs to see that loss goes down and your model starts outputting valid SQL.
+
+Injecting your schema & relationships
+
+Prompt-level: Always prefix the NL question with a tiny “### Schema ###” section listing relevant tables, columns and FK arrows (as you practiced).
+
+Finetune-level: Include the schema snippet in every training example’s "input" field. The model learns to attend to that text when generating its SQL.
+

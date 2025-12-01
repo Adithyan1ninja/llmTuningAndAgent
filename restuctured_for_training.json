@@ -1,0 +1,1203 @@
+[
+ 
+  {
+    "input": "Convert this to list: hey, buy a liter milk, and 10 detergent.",
+    "output": "<json>\n[{\"qty\":1.0,\"unit\":\"L\",\"item\":\"milk\"},{\"qty\":10.0,\"unit\":\"piece\",\"item\":\"detergent\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: by the way, please add 900 grams of brown sugar and a couple of of oil.",
+    "output": "<json>\n[{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"brown sugar\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"oil\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: good morning, pick up 10 honey, 350 g of cucumbers, grab 750 grams black pepper; and please add 1.5 kg of lentils.",
+    "output": "<json>\n[{\"qty\":10.0,\"unit\":\"piece\",\"item\":\"honey\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"cucumbers\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"black pepper\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"lentils\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: by the way, need several of coffee, get a couple of of chicken breast, and get 1 kg cauliflower.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"coffee\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"chicken breast\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"cauliflower\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hey, pick up 350 g zucchini, please add a dozen biscuits; and need 250 g of oats.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"zucchini\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"oats\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hey, get 350 g of black pepper, grab 1 kg of pistachios, pick up several of cardamom; and 1 liters watermelon.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"black pepper\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"pistachios\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cardamom\"},{\"qty\":1,\"unit\":\"L\",\"item\":\"watermelon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, buy 2 liters of olive oil, i need 2.5 kg blueberries and pick up 750 grams of maida.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"blueberries\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"maida\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: note, buy 250 g eggplant, buy 350 g of tomatoes; and pick up a dozen toothbrush.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"eggplant\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"tomatoes\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"toothbrush\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, need 250 grams of maida; and i need 1 kg cumin seeds.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"maida\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"cumin seeds\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: by the way, buy 200 g of spinach, buy 250 g raisins; and need 350 g sweet corn.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"spinach\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"raisins\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"sweet corn\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: by the way, please add half a kilo cabbage, i need 2 bay leaves, buy 250 g beetroot; and buy 12 cheese.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"cabbage\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"bay leaves\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"beetroot\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cheese\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, grab 2 kg of mushrooms, i need 3 kg sweet corn, i need 3 kg of grapes, grab 1 kg lemons, and i need 2 kg flour.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"mushrooms\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"sweet corn\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"grapes\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"lemons\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"flour\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, get 200 g pistachios, and please add a couple of of ghee.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"pistachios\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"ghee\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: note, get 3 kg of tomatoes, pick up 1 liters juice, buy 2.5 kg of tofu, 350 g eggplant, and get several tea.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"tomatoes\"},{\"qty\":1,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"tofu\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"eggplant\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"tea\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hello, i need 2.5 kg papaya, need a couple of of cheese, and please add 3 kg of jaggery.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"papaya\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cheese\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"jaggery\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: by the way, i need 750 grams eggplant, get 750 grams of coriander powder, pick up 200 g oranges; and buy 2 kg of onions.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"eggplant\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"coriander powder\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"oranges\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"onions\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: good morning, need 0.5 kg raisins, please add 5 of bread, need 400 grams of carrots, and grab 200 g tofu.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"raisins\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"bread\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"carrots\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"tofu\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hey, buy 750 grams of spinach, buy 0.5 kg almonds, grab 1.5 kg tofu; and 1.5 kg of garlic.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"spinach\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"almonds\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"tofu\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"garlic\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hi, please add 250 g dates, grab several bread, and grab 3 kg of chickpeas.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"dates\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"bread\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"chickpeas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, please add several biscuits, and need 250 g of sugar.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"sugar\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: good morning, buy 250 g of papaya, 2.5 kg of mustard seeds; and need 6 honey.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"papaya\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"mustard seeds\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"honey\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hi, please add 200 g of kidney beans, buy 10 dishwashing liquid, pick up 350 g coriander powder, pick up 3 kg of avocados; and need a dozen baking powder.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"kidney beans\"},{\"qty\":10.0,\"unit\":\"piece\",\"item\":\"dishwashing liquid\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"coriander powder\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"avocados\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"baking powder\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: by the way, get 2 kg of cumin seeds, buy 400 grams of papaya, need a dozen of soap, add 8 of coffee, and buy a couple of cream.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"cumin seeds\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"papaya\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"soap\"},{\"qty\":8.0,\"unit\":\"piece\",\"item\":\"coffee\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cream\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, i need a dozen of tea, and need a dozen cinnamon.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"tea\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cinnamon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, add 350 g rice, and grab 3 kg mushrooms.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"rice\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"mushrooms\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, please add 200 g of pistachios, buy 2 liters groundnut oil and buy half a kilo of tomatoes.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"pistachios\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"groundnut oil\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"tomatoes\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, add a couple of baking soda, need a couple of toothbrush, please add a dozen of cloves, need 0.5 kg blueberries and get 15 cream.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"toothbrush\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cloves\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"blueberries\"},{\"qty\":15.0,\"unit\":\"piece\",\"item\":\"cream\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, buy a couple of of shampoo, grab 250 grams black pepper and grab 2.5 kg apples.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"shampoo\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"black pepper\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"apples\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, add 750 ml juice, 2 kg of strawberries, add 2 liters buttermilk; and grab several detergent.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"strawberries\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"buttermilk\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"detergent\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hi, get a couple of of chicken breast and please add 2 kg of cashews.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"chicken breast\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"cashews\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, pick up 15 honey, 0.5 kg strawberries, get 200 g paneer, please add 12 chicken breast; and get 400 grams of sweet corn.",
+    "output": "<json>\n[{\"qty\":15.0,\"unit\":\"piece\",\"item\":\"honey\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"strawberries\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"paneer\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"chicken breast\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"sweet corn\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: by the way, grab 0.5 kg of garlic and please add 200 g turmeric.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"turmeric\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, i need 2 kg of jaggery and grab 400 grams rice.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"rice\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: good morning, buy 3 kg of almonds, need 250 g of eggplant, need 5 shampoo and grab 200 g of cucumbers.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"almonds\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"eggplant\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"shampoo\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"cucumbers\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, need 250 g of mint leaves, i need 750 ml coconut milk, buy 2 kg of black pepper, and add 350 g of chickpeas.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"mint leaves\"},{\"qty\":0.75,\"unit\":\"L\",\"item\":\"coconut milk\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"black pepper\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"chickpeas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: by the way, add 2.5 kg of green peas, buy 400 grams of papaya, need 2 liters of groundnut oil, and i need 0.5 kg of mushrooms.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"green peas\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"papaya\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"groundnut oil\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"mushrooms\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hey, i need 2.5 kg of black pepper, please add a dozen of detergent and a couple of of coconut.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"black pepper\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"detergent\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"coconut\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, i need 1 kg of potatoes and add several of cream.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"kg\",\"item\":\"potatoes\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cream\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, half a kilo potatoes, i need 2.5 kg of paneer; and buy several coconut.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"potatoes\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"paneer\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"coconut\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, grab several of bay leaves, please add 2 biscuits; and get 400 grams beetroot.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"bay leaves\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"beetroot\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: by the way, need 3 kg of garlic, and add 1.5 kg of tomatoes.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"tomatoes\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, get 2.5 kg peanuts, 200 g rava, add 1.5 kg of raisins and need 6 of oil.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"peanuts\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"rava\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"raisins\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"oil\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hi, i need 6 chicken breast, need 3 kg maida, buy 300 grams of rice, grab 400 grams avocados and i need a dozen of detergent.",
+    "output": "<json>\n[{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"chicken breast\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"maida\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"rice\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"avocados\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"detergent\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, need 3 kg of cumin seeds, add 500 grams dates, i need 6 of bread, and buy 250 g garlic.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"cumin seeds\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"dates\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"bread\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"garlic\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: by the way, a dozen of bay leaves, need 15 pasta; and i need a couple of of yeast.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"bay leaves\"},{\"qty\":15.0,\"unit\":\"piece\",\"item\":\"pasta\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"yeast\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hello, i need a couple of of shampoo, get half a kilo garlic and buy 900 grams of turmeric.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"shampoo\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"turmeric\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, i need 2.5 kg mushrooms, buy 2 kg of eggplant, need 2 of cream, get 350 g of bell peppers and pick up 2 liters of juice.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"mushrooms\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"eggplant\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cream\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"bell peppers\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"juice\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, pick up 2 kg cumin seeds, grab 900 grams of lemons, add several soap, i need 200 g of broccoli; and buy 250 g semolina.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"cumin seeds\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"lemons\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"soap\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"broccoli\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"semolina\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: by the way, grab 1.5 kg of grapes, pick up 400 grams of pistachios; and i need 500 grams cucumbers.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"grapes\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"pistachios\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"cucumbers\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, add 350 g cauliflower, 6 yogurt, grab half a kilo of avocados, and get 2.5 kg of flour.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"cauliflower\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"yogurt\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"avocados\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"flour\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, add 12 of yeast, need 0.5 liters of olive oil, add 300 grams broccoli, grab several of cardamom, and please add 500 grams of vermicelli.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"yeast\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"broccoli\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cardamom\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"vermicelli\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hey, a couple of of biscuits, need 350 g of semolina; and add 3 kg chickpeas.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"semolina\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"chickpeas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, i need 3 kg green peas, need 350 g almonds, get 200 g of lemons, and grab 6 of yeast.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"green peas\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"almonds\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"lemons\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"yeast\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: good morning, pick up 12 of curd, i need a dozen of cloves, buy 1 kg of oats and need 2 kg ginger.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cloves\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"oats\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"ginger\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: good morning, please add 330 ml sunflower oil, please add 750 grams of tofu, need 900 grams of vermicelli and get a dozen biscuits.",
+    "output": "<json>\n[{\"qty\":0.33,\"unit\":\"L\",\"item\":\"sunflower oil\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"tofu\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"vermicelli\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"biscuits\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: by the way, buy a couple of of butter, grab 3 kg flour, need 500 grams of broccoli, add 1.5 liters buttermilk and pick up 1 kg carrots.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"butter\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"flour\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"broccoli\"},{\"qty\":1.5,\"unit\":\"L\",\"item\":\"buttermilk\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"carrots\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hey, i need 0.5 liters of watermelon, and a dozen honey.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"L\",\"item\":\"watermelon\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"honey\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hey, get 300 grams of apples, need a dozen cream, and buy 200 g salt.",
+    "output": "<json>\n[{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"apples\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cream\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"salt\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, get 1 kg spinach and i need 1 kg onions.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"kg\",\"item\":\"spinach\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"onions\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, buy 2.5 kg beetroot; and add 2 cloves.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"beetroot\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cloves\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: note, pick up 200 ml coconut milk; and get a dozen toothpaste.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"L\",\"item\":\"coconut milk\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"toothpaste\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, i need a couple of of biscuits, grab 200 g maida, grab a couple of curd and grab 12 of coffee.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"maida\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"coffee\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hi, i need 500 grams dates, i need 200 g of paneer, get a dozen of noodles; and i need 750 grams of cucumbers.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"dates\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"paneer\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"noodles\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"cucumbers\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hey, get a couple of toothbrush, pick up 300 grams potatoes, i need a dozen of tea, grab 350 g maida and need 350 g turmeric.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"toothbrush\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"potatoes\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"tea\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"maida\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"turmeric\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: note, i need 350 g of lentils, i need 3 kg kidney beans, grab 300 grams of tomatoes; and need 300 grams of mint leaves.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"lentils\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"kidney beans\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"tomatoes\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"mint leaves\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hello, i need 2.5 kg potatoes and add 3 kg of cucumbers.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"potatoes\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"cucumbers\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: good morning, buy 1.5 kg of black pepper, please add a dozen cinnamon, a couple of butter, and need 1 kg of kidney beans.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"black pepper\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cinnamon\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"butter\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"kidney beans\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: good morning, i need 750 grams of avocados, grab 3 kg cilantro, grab 0.5 kg of spinach, need a dozen of biscuits and add 0.5 liters buttermilk.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"avocados\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"cilantro\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"spinach\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"buttermilk\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hey, grab 750 grams mushrooms, and please add 350 g of avocados.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"mushrooms\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"avocados\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: note, get 8 of curd, and please add 4 of cinnamon.",
+    "output": "<json>\n[{\"qty\":8.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"cinnamon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, pick up 750 grams of cilantro and get 350 g of peanuts.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"cilantro\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"peanuts\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hello, half a kilo of peanuts, i need 1.5 kg chili powder, add a dozen of honey, add 900 grams rava; and pick up 350 g bananas.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"peanuts\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"chili powder\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"honey\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"rava\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"bananas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hi, buy 250 g bananas, add 250 grams beetroot and pick up several bread.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"bananas\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"beetroot\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"bread\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: by the way, i need 250 grams of lentils, need 500 ml of sunflower oil, pick up 900 grams maida, pick up 3 kg potatoes, and get 3 kg of peanuts.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"lentils\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"sunflower oil\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"maida\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"potatoes\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"peanuts\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, grab 350 g brown sugar, pick up a couple of biscuits, please add a kilo of cashews; and i need a kilo of mustard seeds.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"brown sugar\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":1.0,\"unit\":\"kg\",\"item\":\"cashews\"},{\"qty\":1.0,\"unit\":\"kg\",\"item\":\"mustard seeds\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hello, grab 350 g raisins and add 1 kg lentils.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"raisins\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"lentils\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hello, buy 250 g cabbage, pick up 12 baking soda; and add a dozen of tea.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"cabbage\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"tea\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hello, buy 2 kg of garlic, need several oil, add 4 of baking powder, i need 200 g of carrots, and pick up 200 g of paneer.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"oil\"},{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"baking powder\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"carrots\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"paneer\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, pick up a couple of cloves, get several of noodles, get 1.5 kg of broccoli, 500 ml of juice; and need several chicken breast.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cloves\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"noodles\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"broccoli\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"chicken breast\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hi, i need 10 of butter, buy 12 tea, need 900 grams broccoli, please add 2.5 kg of chili powder, and i need a couple of cheese.",
+    "output": "<json>\n[{\"qty\":10.0,\"unit\":\"piece\",\"item\":\"butter\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"tea\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"broccoli\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"chili powder\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cheese\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: by the way, need 2 liters of juice; and pick up 400 grams sweet corn.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"sweet corn\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: by the way, pick up 200 g vermicelli, and add a couple of detergent.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"vermicelli\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"detergent\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: good morning, a kilo apples, buy 6 of toothpaste; and need 250 grams eggplant.",
+    "output": "<json>\n[{\"qty\":1.0,\"unit\":\"kg\",\"item\":\"apples\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"toothpaste\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"eggplant\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hi, grab 350 g of oats, add 4 of cheese, i need a couple of of noodles and get 250 grams of avocados.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"oats\"},{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"cheese\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"noodles\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"avocados\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hello, add a dozen of chicken breast, and add 500 grams cumin seeds.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"chicken breast\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"cumin seeds\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: good morning, i need several baking soda, buy 500 grams of avocados, a dozen honey, and 2.5 kg of almonds.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"avocados\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"honey\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"almonds\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, pick up a dozen of pasta, grab half a liter of juice, i need 1.5 kg jaggery and buy 1 kg of sugar.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"pasta\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"sugar\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hey, get 1 kg of black pepper, i need several of baking soda, pick up a dozen of tea, need 750 ml of groundnut oil, and pick up 1000 ml coconut milk.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"kg\",\"item\":\"black pepper\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"tea\"},{\"qty\":0.75,\"unit\":\"L\",\"item\":\"groundnut oil\"},{\"qty\":1.0,\"unit\":\"L\",\"item\":\"coconut milk\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, add 2.5 kg of carrots, i need 350 g broccoli; and buy 10 of cardamom.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"carrots\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"broccoli\"},{\"qty\":10.0,\"unit\":\"piece\",\"item\":\"cardamom\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, buy 500 grams of spinach, and get 2.5 kg coriander powder.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"spinach\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"coriander powder\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hey, please add 4 of bay leaves; and i need 2.5 kg of cucumbers.",
+    "output": "<json>\n[{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"bay leaves\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"cucumbers\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hello, get 750 grams spinach, 2.5 kg of peanuts, 200 g chili powder; and please add several of baking soda.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"spinach\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"peanuts\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"chili powder\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"baking soda\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, add a couple of of cardamom; and need 3 kg of peanuts.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cardamom\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"peanuts\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hey, pick up 2 kg garlic and pick up 400 grams of cabbage.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"cabbage\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, please add 400 grams of coriander powder and grab half a kilo of broccoli.",
+    "output": "<json>\n[{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"coriander powder\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"broccoli\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: good morning, 400 grams of lemons, please add 2 kg of garlic, 8 cardamom and buy 12 of cinnamon.",
+    "output": "<json>\n[{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"lemons\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":8.0,\"unit\":\"piece\",\"item\":\"cardamom\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cinnamon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hello, grab 250 g tofu, pick up 15 dishwashing liquid; and grab a couple of pasta.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"tofu\"},{\"qty\":15.0,\"unit\":\"piece\",\"item\":\"dishwashing liquid\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"pasta\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, pick up 3 of yeast, get 330 ml of olive oil, buy 15 of baking soda and pick up 2 cheese.",
+    "output": "<json>\n[{\"qty\":3.0,\"unit\":\"piece\",\"item\":\"yeast\"},{\"qty\":0.33,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":15.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cheese\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, grab 8 baking powder, pick up several of cinnamon and need 750 grams of carrots.",
+    "output": "<json>\n[{\"qty\":8.0,\"unit\":\"piece\",\"item\":\"baking powder\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cinnamon\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"carrots\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: good morning, please add half a liter of sunflower oil, get a dozen of butter, get 900 grams of strawberries and i need 200 g vermicelli.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"L\",\"item\":\"sunflower oil\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"butter\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"strawberries\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"vermicelli\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: by the way, 2.5 kg of strawberries, buy 750 grams cucumbers, buy 3 kg of grapes; and buy 1 liters of groundnut oil.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"strawberries\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"cucumbers\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"grapes\"},{\"qty\":1,\"unit\":\"L\",\"item\":\"groundnut oil\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hey, need 6 baking soda, add a dozen coconut, need 1.5 kg of lemons and grab 3 kg of mushrooms.",
+    "output": "<json>\n[{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"coconut\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"lemons\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"mushrooms\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hey, add 12 of tea, and buy 15 of toothpaste.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"tea\"},{\"qty\":15.0,\"unit\":\"piece\",\"item\":\"toothpaste\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hello, 200 g mushrooms, i need 1.5 kg of potatoes; and buy 300 grams dates.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"mushrooms\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"potatoes\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"dates\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, please add 2 coconut, get 900 grams pistachios, a couple of oil, add several of tea; and 3 kg of cumin seeds.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"coconut\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"pistachios\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"oil\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"tea\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"cumin seeds\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: good morning, get 900 grams of mustard seeds and need several of tea.",
+    "output": "<json>\n[{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"mustard seeds\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"tea\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hi, pick up 4 dishwashing liquid, get 350 g eggplant, and grab 900 grams of cashews.",
+    "output": "<json>\n[{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"dishwashing liquid\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"eggplant\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"cashews\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hello, please add a kilo of dates, need 1.5 kg of flour, need 750 grams mint leaves, 900 grams carrots; and need a dozen of coconut.",
+    "output": "<json>\n[{\"qty\":1.0,\"unit\":\"kg\",\"item\":\"dates\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"flour\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"mint leaves\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"carrots\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"coconut\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, add a liter groundnut oil, buy 8 of cheese, please add 350 g almonds; and buy a dozen coffee.",
+    "output": "<json>\n[{\"qty\":1.0,\"unit\":\"L\",\"item\":\"groundnut oil\"},{\"qty\":8.0,\"unit\":\"piece\",\"item\":\"cheese\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"almonds\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"coffee\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: note, buy 350 g oranges, i need 1.5 kg of jaggery, i need a dozen of butter and add 250 g bananas.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"oranges\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"butter\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"bananas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, grab 350 g jaggery, 0.5 kg bananas, buy 3 kg brown sugar, 200 g of zucchini and pick up 1 liters of sunflower oil.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"bananas\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"brown sugar\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"zucchini\"},{\"qty\":1,\"unit\":\"L\",\"item\":\"sunflower oil\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hey, i need a dozen of chicken breast, please add 2 liters olive oil, add 200 g of raisins, buy a dozen of ghee; and get a kilo of carrots.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"chicken breast\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"raisins\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"ghee\"},{\"qty\":1.0,\"unit\":\"kg\",\"item\":\"carrots\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hello, i need half a kilo sugar and please add 500 grams raisins.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"sugar\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"raisins\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hi, pick up 6 ghee, please add 900 grams of black pepper, and grab 1 kg bananas.",
+    "output": "<json>\n[{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"ghee\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"black pepper\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"bananas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hey, grab 250 grams of peanuts, grab 330 ml of sunflower oil, and buy 2 kg blueberries.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"peanuts\"},{\"qty\":0.33,\"unit\":\"L\",\"item\":\"sunflower oil\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"blueberries\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hello, buy a couple of of shampoo, need 500 grams bell peppers, add 3 kg zucchini; and 200 g bananas.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"shampoo\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"bell peppers\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"zucchini\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"bananas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, add 350 g oranges; and 1.5 kg of lemons.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"oranges\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"lemons\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, grab a dozen coconut; and need 350 g of mushrooms.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"coconut\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"mushrooms\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, add 250 g turmeric, pick up 250 g tofu, get 2 pasta and need 15 of cinnamon.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"turmeric\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"tofu\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"pasta\"},{\"qty\":15.0,\"unit\":\"piece\",\"item\":\"cinnamon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hello, need a couple of of biscuits, add 250 g of jaggery, and get 1.5 kg mushrooms.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"mushrooms\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: by the way, a dozen curd, and please add 250 g sugar.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"sugar\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: note, add 250 grams of black pepper; and 15 of cloves.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"black pepper\"},{\"qty\":15.0,\"unit\":\"piece\",\"item\":\"cloves\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, get 1000 ml of buttermilk, please add 3 tea, pick up 15 of eggs; and pick up 10 cloves.",
+    "output": "<json>\n[{\"qty\":1.0,\"unit\":\"L\",\"item\":\"buttermilk\"},{\"qty\":3.0,\"unit\":\"piece\",\"item\":\"tea\"},{\"qty\":15.0,\"unit\":\"piece\",\"item\":\"eggs\"},{\"qty\":10.0,\"unit\":\"piece\",\"item\":\"cloves\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hello, a dozen soap, buy 2 kg of green peas and get 900 grams chili powder.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"soap\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"green peas\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"chili powder\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hey, need 3 kg of jaggery, buy 0.5 kg of flour, get a couple of curd; and please add 250 g rice.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"flour\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"rice\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hi, grab 500 grams of oranges, buy 200 g chili powder, i need 400 grams garlic, pick up half a kilo of jaggery; and add 1.5 kg of broccoli.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"oranges\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"chili powder\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"broccoli\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hello, please add 2.5 kg of avocados, get 250 grams of mint leaves, pick up 1 liters of olive oil, pick up 0.5 kg of vermicelli and i need 200 g raisins.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"avocados\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"mint leaves\"},{\"qty\":1,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"vermicelli\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"raisins\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hey, 8 of bread, buy 2 liters milk, buy several yogurt, get 2 kg chickpeas and get 6 of cream.",
+    "output": "<json>\n[{\"qty\":8.0,\"unit\":\"piece\",\"item\":\"bread\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"milk\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"yogurt\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"chickpeas\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"cream\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: by the way, please add 1 kg of strawberries, 300 grams of chili powder, grab several of coconut; and pick up 250 g of oranges.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"kg\",\"item\":\"strawberries\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"chili powder\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"coconut\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"oranges\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hello, pick up 200 g of chili powder, need 2 kg of cumin seeds and please add a dozen of baking powder.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"chili powder\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"cumin seeds\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"baking powder\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, buy several pasta, add 12 butter, grab 350 g jaggery, need a dozen oil and grab 3 kg rava.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"pasta\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"butter\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"oil\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"rava\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, buy 0.5 kg of vermicelli, please add 250 grams papaya, 330 ml buttermilk, pick up a couple of of cloves, and 500 ml groundnut oil.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"vermicelli\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"papaya\"},{\"qty\":0.33,\"unit\":\"L\",\"item\":\"buttermilk\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cloves\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"groundnut oil\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hi, pick up 900 grams beetroot, i need several of noodles and pick up half a liter watermelon.",
+    "output": "<json>\n[{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"beetroot\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"noodles\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"watermelon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: note, add a couple of of bay leaves, i need 6 coconut, and get 1.5 kg kidney beans.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"bay leaves\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"coconut\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"kidney beans\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hello, get 200 g of mustard seeds, grab 3 kg of brown sugar and add 2.5 kg blueberries.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"mustard seeds\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"brown sugar\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"blueberries\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, buy 3 shampoo; and add 1.5 kg black pepper.",
+    "output": "<json>\n[{\"qty\":3.0,\"unit\":\"piece\",\"item\":\"shampoo\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"black pepper\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hey, pick up a dozen curd, need 2 kg almonds, get 350 g coriander powder, pick up a kilo maida; and grab 750 ml of juice.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"almonds\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"coriander powder\"},{\"qty\":1.0,\"unit\":\"kg\",\"item\":\"maida\"},{\"qty\":0.75,\"unit\":\"L\",\"item\":\"juice\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, buy 900 grams blueberries, get 1.5 kg mint leaves, pick up 2 liters coconut milk, please add 250 g almonds; and grab 750 ml of buttermilk.",
+    "output": "<json>\n[{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"blueberries\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"mint leaves\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"coconut milk\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"almonds\"},{\"qty\":0.75,\"unit\":\"L\",\"item\":\"buttermilk\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hey, 250 ml of coconut milk, get 2.5 kg of ginger, buy a dozen of chicken breast, need 750 grams jaggery and add 330 ml milk.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"L\",\"item\":\"coconut milk\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"ginger\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"chicken breast\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":0.33,\"unit\":\"L\",\"item\":\"milk\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hey, a dozen of detergent, and add 1.5 kg pistachios.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"detergent\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"pistachios\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: by the way, please add 4 shampoo, buy a dozen of baking soda, pick up 2.5 kg peanuts, and need 250 g of blueberries.",
+    "output": "<json>\n[{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"shampoo\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"peanuts\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"blueberries\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, please add 200 g grapes, grab 1.5 kg bananas, and grab a couple of of honey.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"grapes\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"bananas\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"honey\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: by the way, add 900 grams of papaya and several of cinnamon.",
+    "output": "<json>\n[{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"papaya\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cinnamon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, need 200 g of apples, buy 1.5 liters of buttermilk, pick up 750 ml of watermelon, and i need 200 g black pepper.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"apples\"},{\"qty\":1.5,\"unit\":\"L\",\"item\":\"buttermilk\"},{\"qty\":0.75,\"unit\":\"L\",\"item\":\"watermelon\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"black pepper\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: by the way, get 250 g cabbage, need 250 g eggplant; and i need 1.5 kg of tomatoes.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"cabbage\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"eggplant\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"tomatoes\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, grab 3 kg potatoes, 1000 ml watermelon, and buy half a kilo peanuts.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"potatoes\"},{\"qty\":1.0,\"unit\":\"L\",\"item\":\"watermelon\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"peanuts\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: by the way, grab a couple of cheese, need half a kilo of blueberries, i need 1 liters groundnut oil, and add 250 grams spinach.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cheese\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"blueberries\"},{\"qty\":1,\"unit\":\"L\",\"item\":\"groundnut oil\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"spinach\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: by the way, get a kilo grapes, pick up a dozen of baking soda, and please add 330 ml olive oil.",
+    "output": "<json>\n[{\"qty\":1.0,\"unit\":\"kg\",\"item\":\"grapes\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":0.33,\"unit\":\"L\",\"item\":\"olive oil\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, need a dozen cream, grab 2.5 kg maida, and add 2 toothbrush.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cream\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"maida\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"toothbrush\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: by the way, grab 250 g almonds, pick up 350 g of maida, i need 300 grams of oranges, need 3 curd; and buy 0.5 kg of onions.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"almonds\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"maida\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"oranges\"},{\"qty\":3.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"onions\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, need 750 grams blueberries, get 3 soap, need 500 grams papaya, a dozen chicken breast, and add 2 kg almonds.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"blueberries\"},{\"qty\":3.0,\"unit\":\"piece\",\"item\":\"soap\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"papaya\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"chicken breast\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"almonds\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: note, 3 kg dates, get 8 of detergent, i need 3 kg of raisins, and grab 200 g of cilantro.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"dates\"},{\"qty\":8.0,\"unit\":\"piece\",\"item\":\"detergent\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"raisins\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"cilantro\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: good morning, a couple of of toothpaste, pick up 750 grams semolina, please add 0.5 kg peanuts and 250 grams oranges.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"toothpaste\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"semolina\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"peanuts\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"oranges\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: good morning, please add 1000 ml of juice, need 2 kg of cucumbers, i need 350 g of cilantro and please add 250 grams sugar.",
+    "output": "<json>\n[{\"qty\":1.0,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"cucumbers\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"cilantro\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"sugar\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hi, i need 250 g of zucchini; and pick up a couple of tea.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"zucchini\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"tea\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: by the way, please add a couple of of detergent, get a dozen yeast, please add 2 kg mushrooms and pick up 900 grams zucchini.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"detergent\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"yeast\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"mushrooms\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"zucchini\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hey, get a couple of bread, please add 250 grams salt, pick up several of curd; and i need 900 grams broccoli.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"bread\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"salt\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"broccoli\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: good morning, need 300 grams oranges, pick up 1.5 kg of rava, i need 1.5 kg jaggery, get 200 g bananas; and pick up 2 kg of avocados.",
+    "output": "<json>\n[{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"oranges\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"rava\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"bananas\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"avocados\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hello, half a kilo of salt, i need 1.5 kg beetroot, buy 400 grams of turmeric and get 1.5 kg of zucchini.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"salt\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"beetroot\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"turmeric\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"zucchini\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: good morning, 200 g flour, pick up a kilo of zucchini, and need a dozen bread.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"flour\"},{\"qty\":1.0,\"unit\":\"kg\",\"item\":\"zucchini\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"bread\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: by the way, 1.5 kg cashews, grab 200 g cabbage and 250 g of spinach.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"cashews\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"cabbage\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"spinach\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, 2 kg chickpeas, need 750 grams black pepper and 750 grams of mint leaves.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"chickpeas\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"black pepper\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"mint leaves\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hello, buy 350 g strawberries, pick up a dozen of oil and buy 500 grams of cashews.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"strawberries\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"oil\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"cashews\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: by the way, add 1.5 liters milk, get 750 grams coriander powder, and need 3 kg maida.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"L\",\"item\":\"milk\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"coriander powder\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"maida\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, please add 200 g semolina, 1000 ml of juice and please add 400 grams chickpeas.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"semolina\"},{\"qty\":1.0,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"chickpeas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hey, a liter of coconut milk, get 2.5 kg sugar; and 4 of yogurt.",
+    "output": "<json>\n[{\"qty\":1.0,\"unit\":\"L\",\"item\":\"coconut milk\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"sugar\"},{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"yogurt\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hey, grab several of butter, need a couple of of curd; and add 4 of pasta.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"butter\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"pasta\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hi, get 3 kg of green peas, 0.5 kg of dates, i need 1.5 kg rava and i need 200 g of cilantro.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"green peas\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"dates\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"rava\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"cilantro\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hello, add 900 grams of almonds, i need 5 yogurt and a couple of shampoo.",
+    "output": "<json>\n[{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"almonds\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"yogurt\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"shampoo\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hello, please add 250 grams of ginger, need 0.5 kg grapes, i need 6 cardamom, i need 10 biscuits; and add 250 grams of kidney beans.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"ginger\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"grapes\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"cardamom\"},{\"qty\":10.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"kidney beans\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, please add 8 baking powder, need 2.5 kg of avocados, and get half a kilo of garlic.",
+    "output": "<json>\n[{\"qty\":8.0,\"unit\":\"piece\",\"item\":\"baking powder\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"avocados\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"garlic\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hi, a couple of yogurt, add 6 coffee, add 250 g of raisins, i need 900 grams of peanuts, and pick up 500 grams maida.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"yogurt\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"coffee\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"raisins\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"peanuts\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"maida\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: good morning, get 350 g rice, i need 350 g tofu, please add 750 grams of cabbage, buy 500 grams of zucchini and add 500 grams green peas.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"rice\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"tofu\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"cabbage\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"zucchini\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"green peas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, i need several cloves, and get 250 g semolina.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cloves\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"semolina\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: good morning, get 250 g blueberries and pick up a dozen of chicken breast.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"blueberries\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"chicken breast\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hey, buy several cream, get 200 g of cumin seeds, i need 3 honey, grab a dozen of bay leaves and add 3 kg of eggplant.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cream\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"cumin seeds\"},{\"qty\":3.0,\"unit\":\"piece\",\"item\":\"honey\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"bay leaves\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"eggplant\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, please add 2 kg of bell peppers, pick up 12 of yeast, need 6 of baking powder, please add 1000 ml olive oil; and need 2 liters of groundnut oil.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"bell peppers\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"yeast\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"baking powder\"},{\"qty\":1.0,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"groundnut oil\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: by the way, buy 2 kg of lemons; and i need 200 g cabbage.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"lemons\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"cabbage\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hi, 1 kg carrots, please add a couple of of curd, i need 2 kg of jaggery, add 250 ml of milk, and buy 300 grams of cilantro.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"kg\",\"item\":\"carrots\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":0.25,\"unit\":\"L\",\"item\":\"milk\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"cilantro\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: note, please add 1 liters groundnut oil, need a dozen yogurt, a dozen tea and please add 1 liters milk.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"L\",\"item\":\"groundnut oil\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"yogurt\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"tea\"},{\"qty\":1,\"unit\":\"L\",\"item\":\"milk\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hello, buy 2 kg of blueberries, i need a dozen of biscuits, buy 3 kg of kidney beans, and need 750 grams of eggplant.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"blueberries\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"kidney beans\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"eggplant\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: by the way, please add a dozen of honey, pick up 1 kg of almonds, add 900 grams cumin seeds, and grab 250 g of tofu.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"honey\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"almonds\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"cumin seeds\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"tofu\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: by the way, pick up 2.5 kg of lentils, buy a couple of toothbrush; and get 3 of toothpaste.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"lentils\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"toothbrush\"},{\"qty\":3.0,\"unit\":\"piece\",\"item\":\"toothpaste\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: by the way, need 1.5 liters olive oil, need 1.5 kg of mustard seeds; and add 500 grams pistachios.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"mustard seeds\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"pistachios\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hi, buy 900 grams of sweet corn and get 0.5 kg lemons.",
+    "output": "<json>\n[{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"sweet corn\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"lemons\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, pick up 900 grams bell peppers, need 250 grams of coriander powder, add 4 toothpaste, grab 200 g mint leaves, and grab a dozen of chicken breast.",
+    "output": "<json>\n[{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"bell peppers\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"coriander powder\"},{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"toothpaste\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"mint leaves\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"chicken breast\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hi, buy 200 ml of buttermilk, and please add 2 oil.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"L\",\"item\":\"buttermilk\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"oil\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, 250 ml juice and buy 6 of cloves.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"cloves\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: good morning, 250 ml of olive oil, please add 3 kg carrots, i need 750 grams lentils, buy half a liter of coconut milk; and i need 750 grams chickpeas.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"carrots\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"lentils\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"coconut milk\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"chickpeas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: by the way, add 2.5 kg of strawberries, and need 300 grams cabbage.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"strawberries\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"cabbage\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hi, buy a couple of yeast, need a dozen baking powder, please add 3 of soap, and pick up 400 grams carrots.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"yeast\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"baking powder\"},{\"qty\":3.0,\"unit\":\"piece\",\"item\":\"soap\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"carrots\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: by the way, pick up several of cream and i need 2 cardamom.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cream\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cardamom\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hi, need a dozen yogurt, need a dozen of cinnamon; and half a kilo oranges.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"yogurt\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cinnamon\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"oranges\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: good morning, get 200 g blueberries, pick up a dozen detergent, need a couple of of butter and pick up 200 g of flour.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"blueberries\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"detergent\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"butter\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"flour\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, i need 350 g eggplant, get 3 kg oats, get 2 liters of juice, get 330 ml groundnut oil, and i need a couple of of coconut.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"eggplant\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"oats\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":0.33,\"unit\":\"L\",\"item\":\"groundnut oil\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"coconut\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hello, pick up 3 kg tofu and grab 900 grams pistachios.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"tofu\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"pistachios\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hello, add 300 grams of cucumbers, pick up 200 g of brown sugar, buy 6 baking soda, grab 3 kg of potatoes, and add 200 g of onions.",
+    "output": "<json>\n[{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"cucumbers\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"brown sugar\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"potatoes\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"onions\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, 2 kg of beetroot, need 250 grams coriander powder, add several cheese, several of cardamom and buy 250 g of pistachios.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"beetroot\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"coriander powder\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cheese\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cardamom\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"pistachios\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, a dozen toothpaste, buy 3 kg of beetroot, a couple of butter; and grab 250 g flour.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"toothpaste\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"beetroot\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"butter\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"flour\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: note, grab 1 kg lemons, add 3 of cheese; and add 750 ml watermelon.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"kg\",\"item\":\"lemons\"},{\"qty\":3.0,\"unit\":\"piece\",\"item\":\"cheese\"},{\"qty\":0.75,\"unit\":\"L\",\"item\":\"watermelon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hello, buy a dozen of cream; and get 200 g avocados.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cream\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"avocados\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, need several cloves, add 1.5 liters of juice, buy 200 g of strawberries, and buy 15 of baking powder.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cloves\"},{\"qty\":1.5,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"strawberries\"},{\"qty\":15.0,\"unit\":\"piece\",\"item\":\"baking powder\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: note, buy 1000 ml olive oil, i need 900 grams of kidney beans, grab 750 ml of sunflower oil, and grab 750 grams of spinach.",
+    "output": "<json>\n[{\"qty\":1.0,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"kidney beans\"},{\"qty\":0.75,\"unit\":\"L\",\"item\":\"sunflower oil\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"spinach\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: good morning, need 2 biscuits; and need 200 g of bell peppers.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"bell peppers\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: note, buy 200 g salt, a couple of of ghee, pick up 250 g of sugar and need 200 g chickpeas.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"salt\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"ghee\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"sugar\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"chickpeas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hello, please add 2.5 kg almonds, get 4 shampoo and grab 350 g cashews.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"almonds\"},{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"shampoo\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"cashews\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: good morning, 2 kg spinach, need 1.5 kg garlic, i need 750 grams of vermicelli; and get 250 g paneer.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"spinach\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"vermicelli\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"paneer\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hello, please add 1.5 kg strawberries, pick up a dozen of ghee, and i need 2 liters buttermilk.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"strawberries\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"ghee\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"buttermilk\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: good morning, half a kilo of rice, add 330 ml of olive oil, and pick up 3 kg cumin seeds.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"rice\"},{\"qty\":0.33,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"cumin seeds\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: good morning, i need 1 liters of buttermilk, i need 3 kg of tomatoes, and add 300 grams peanuts.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"L\",\"item\":\"buttermilk\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"tomatoes\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"peanuts\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, please add 350 g potatoes and add 250 g of cilantro.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"potatoes\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"cilantro\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, 0.5 liters juice; and buy 200 ml of sunflower oil.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":0.2,\"unit\":\"L\",\"item\":\"sunflower oil\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, add a couple of baking powder, grab 5 yogurt, get a dozen of tea, and 3 kg of cabbage.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"baking powder\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"yogurt\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"tea\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"cabbage\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: by the way, need 500 grams rice; and please add 3 kg of tomatoes.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"rice\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"tomatoes\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, i need 400 grams garlic, buy 2.5 kg mint leaves, and need 750 grams green peas.",
+    "output": "<json>\n[{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"mint leaves\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"green peas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hi, get several of toothbrush, need 300 grams vermicelli; and add 250 ml of coconut milk.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"toothbrush\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"vermicelli\"},{\"qty\":0.25,\"unit\":\"L\",\"item\":\"coconut milk\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: good morning, get 330 ml of groundnut oil, need 1 kg of vermicelli, add 200 g of cucumbers, and add 400 grams of jaggery.",
+    "output": "<json>\n[{\"qty\":0.33,\"unit\":\"L\",\"item\":\"groundnut oil\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"vermicelli\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"cucumbers\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"jaggery\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: note, need several honey; and i need 900 grams carrots.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"honey\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"carrots\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hello, buy 200 g vermicelli, and get 2.5 kg of papaya.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"vermicelli\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"papaya\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hey, please add 1.5 kg carrots, buy 350 g zucchini, get 4 cloves and pick up a dozen of cinnamon.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"carrots\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"zucchini\"},{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"cloves\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cinnamon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: good morning, buy 3 kg apples, add 250 g of tofu; and several noodles.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"apples\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"tofu\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"noodles\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hey, grab a couple of of detergent, buy 3 kg tofu, pick up 1 kg of vermicelli and a couple of of ghee.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"detergent\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"tofu\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"vermicelli\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"ghee\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: by the way, get 300 grams cauliflower, please add 2.5 kg oranges and i need a couple of of cinnamon.",
+    "output": "<json>\n[{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"cauliflower\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"oranges\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cinnamon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, get half a kilo salt, 250 grams rava, 1 kg of garlic, i need 350 g of cashews and add 2.5 kg of grapes.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"salt\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"rava\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"cashews\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"grapes\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hey, pick up 400 grams vermicelli, please add 350 g mint leaves; and i need a couple of yeast.",
+    "output": "<json>\n[{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"vermicelli\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"mint leaves\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"yeast\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: by the way, buy 350 g cucumbers, i need a couple of baking powder, grab 300 grams flour, buy 400 grams cilantro; and pick up 2 kg of sweet corn.",
+    "output": "<json>\n[{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"cucumbers\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"baking powder\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"flour\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"cilantro\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"sweet corn\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: good morning, need 1 kg blueberries; and need 750 grams of carrots.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"kg\",\"item\":\"blueberries\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"carrots\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: by the way, pick up half a kilo semolina; and get a couple of bay leaves.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"semolina\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"bay leaves\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: by the way, please add 1.5 kg of tofu, pick up 2 liters buttermilk, need 500 grams of blueberries, and get 900 grams of jaggery.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"tofu\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"buttermilk\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"blueberries\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"jaggery\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: good morning, buy a couple of of soap, get 900 grams garlic, i need 3 kg flour, i need 250 g of black pepper; and i need 5 of cinnamon.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"soap\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"flour\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"black pepper\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cinnamon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hey, get 750 grams papaya, a dozen of baking soda, please add 3 kg of pistachios, get 15 bay leaves, and please add a dozen of tea.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"papaya\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"pistachios\"},{\"qty\":15.0,\"unit\":\"piece\",\"item\":\"bay leaves\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"tea\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hello, i need 1 kg papaya, pick up 900 grams of chickpeas, please add 250 g dates; and need 2 liters watermelon.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"kg\",\"item\":\"papaya\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"chickpeas\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"dates\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"watermelon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, buy 400 grams brown sugar and add 350 g of oranges.",
+    "output": "<json>\n[{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"brown sugar\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"oranges\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: good morning, add 750 grams lentils, please add half a kilo eggplant; and buy 500 ml of olive oil.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"lentils\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"eggplant\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"olive oil\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, buy 400 grams mushrooms, pick up several of tea, get a couple of of yogurt; and add 350 g papaya.",
+    "output": "<json>\n[{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"mushrooms\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"tea\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"yogurt\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"papaya\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: note, get 1 kg of tofu, add 200 g salt and add 750 grams cauliflower.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"kg\",\"item\":\"tofu\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"salt\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"cauliflower\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: good morning, 1 kg semolina, add a couple of of honey, grab 200 ml of coconut milk, i need 200 g of mint leaves; and pick up a dozen of cinnamon.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"kg\",\"item\":\"semolina\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"honey\"},{\"qty\":0.2,\"unit\":\"L\",\"item\":\"coconut milk\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"mint leaves\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cinnamon\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: by the way, buy 6 biscuits, pick up 1.5 kg of vermicelli and please add 2 kg of flour.",
+    "output": "<json>\n[{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"vermicelli\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"flour\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hey, i need 750 grams papaya, buy a dozen honey, get 2 kg beetroot and add 350 g mint leaves.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"papaya\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"honey\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"beetroot\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"mint leaves\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: note, need 2 kg of carrots, grab 750 grams peanuts, please add 4 bay leaves, add 500 ml buttermilk; and pick up a dozen of toothbrush.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"carrots\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"peanuts\"},{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"bay leaves\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"buttermilk\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"toothbrush\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, buy 3 kg kidney beans, pick up 6 of eggs, i need 500 grams of grapes; and add a couple of of cheese.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"kidney beans\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"eggs\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"grapes\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cheese\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, please add half a kilo of strawberries, need 3 kg of peanuts, need a dozen of baking soda, and grab 250 g of semolina.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"strawberries\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"peanuts\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"semolina\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: note, get 3 dishwashing liquid, buy half a kilo of broccoli, and i need 2 kg raisins.",
+    "output": "<json>\n[{\"qty\":3.0,\"unit\":\"piece\",\"item\":\"dishwashing liquid\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"broccoli\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"raisins\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, get 1 kg of pistachios; and pick up a liter of juice.",
+    "output": "<json>\n[{\"qty\":1,\"unit\":\"kg\",\"item\":\"pistachios\"},{\"qty\":1.0,\"unit\":\"L\",\"item\":\"juice\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: good morning, grab a couple of of cream, pick up 900 grams of cabbage, add 300 grams carrots, and get 10 of soap.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cream\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"cabbage\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"carrots\"},{\"qty\":10.0,\"unit\":\"piece\",\"item\":\"soap\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, add 900 grams of kidney beans, please add 10 of tea and please add 350 g of sweet corn.",
+    "output": "<json>\n[{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"kidney beans\"},{\"qty\":10.0,\"unit\":\"piece\",\"item\":\"tea\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"sweet corn\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, need 2 kg mushrooms, buy 3 kg garlic, need a dozen of toothpaste, grab a dozen of detergent and i need half a kilo of cashews.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"mushrooms\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"toothpaste\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"detergent\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"cashews\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hello, buy 4 soap, need 3 of yeast, please add 2 liters coconut milk and grab half a kilo of lemons.",
+    "output": "<json>\n[{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"soap\"},{\"qty\":3.0,\"unit\":\"piece\",\"item\":\"yeast\"},{\"qty\":2,\"unit\":\"L\",\"item\":\"coconut milk\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"lemons\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: note, buy 10 soap, grab 300 grams of sugar, grab 200 g mustard seeds, please add a dozen of chicken breast; and add 250 grams bell peppers.",
+    "output": "<json>\n[{\"qty\":10.0,\"unit\":\"piece\",\"item\":\"soap\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"sugar\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"mustard seeds\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"chicken breast\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"bell peppers\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: by the way, 250 g sweet corn, need 750 ml juice, and pick up 1.5 liters olive oil.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"sweet corn\"},{\"qty\":0.75,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":1.5,\"unit\":\"L\",\"item\":\"olive oil\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hey, i need half a kilo of broccoli and add a kilo almonds.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"broccoli\"},{\"qty\":1.0,\"unit\":\"kg\",\"item\":\"almonds\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hey, 900 grams of mushrooms and buy 3 kg garlic.",
+    "output": "<json>\n[{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"mushrooms\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"garlic\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: note, 250 g coriander powder, need 400 grams brown sugar; and buy 250 g of cashews.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"coriander powder\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"brown sugar\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"cashews\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: by the way, buy 2 kg of lemons, add 2.5 kg jaggery, add 1.5 kg of mint leaves, get 15 of ghee, and please add 350 g of kidney beans.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"lemons\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"mint leaves\"},{\"qty\":15.0,\"unit\":\"piece\",\"item\":\"ghee\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"kidney beans\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: by the way, grab 1.5 kg of lemons, i need a dozen curd, get 200 ml olive oil, i need 2 cardamom and a couple of cream.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"lemons\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":0.2,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cardamom\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cream\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hi, 5 curd, add several yeast, add several soap, buy 200 g of rava; and 500 grams of paneer.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"yeast\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"soap\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"rava\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"paneer\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hello, please add a dozen dishwashing liquid, and please add 200 g oranges.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"dishwashing liquid\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"oranges\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, buy a couple of curd, pick up 500 grams raisins; and i need 900 grams of mushrooms.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"raisins\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"mushrooms\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, pick up several of cloves, pick up 350 g of lentils, pick up 3 kg of raisins, grab 750 grams garlic and pick up 1000 ml of buttermilk.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cloves\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"lentils\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"raisins\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":1.0,\"unit\":\"L\",\"item\":\"buttermilk\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, buy several toothbrush and need 1.5 kg sugar.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"toothbrush\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"sugar\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hi, i need 750 ml groundnut oil; and get 8 honey.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"L\",\"item\":\"groundnut oil\"},{\"qty\":8.0,\"unit\":\"piece\",\"item\":\"honey\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: by the way, i need 2 kg cauliflower, add 500 grams paneer; and need 350 g chili powder.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"cauliflower\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"paneer\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"chili powder\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, please add a couple of chicken breast, grab 750 grams bananas, pick up 2.5 kg mustard seeds, buy 300 grams of kidney beans; and grab 300 grams avocados.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"chicken breast\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"bananas\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"mustard seeds\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"kidney beans\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"avocados\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hi, get 2 kg green peas, and buy 2 kg avocados.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"green peas\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"avocados\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hey, add a couple of cloves, buy 2.5 kg avocados, please add a dozen soap, i need 2 kg of spinach and pick up 2 kg of carrots.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cloves\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"avocados\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"soap\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"spinach\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"carrots\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, get 1.5 kg of maida, get a kilo of pistachios, 200 ml milk; and need 2.5 kg turmeric.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"maida\"},{\"qty\":1.0,\"unit\":\"kg\",\"item\":\"pistachios\"},{\"qty\":0.2,\"unit\":\"L\",\"item\":\"milk\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"turmeric\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, buy 400 grams turmeric; and buy 2.5 kg of beetroot.",
+    "output": "<json>\n[{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"turmeric\"},{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"beetroot\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: by the way, need half a liter groundnut oil, add 6 soap; and grab 250 grams dates.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"L\",\"item\":\"groundnut oil\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"soap\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"dates\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: note, buy a couple of of bread, pick up a dozen eggs, get a couple of coffee and 2 kg pistachios.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"bread\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"eggs\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"coffee\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"pistachios\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, need 1.5 liters of coconut milk, need 1.5 liters watermelon, please add 200 g of garlic; and i need 10 eggs.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"L\",\"item\":\"coconut milk\"},{\"qty\":1.5,\"unit\":\"L\",\"item\":\"watermelon\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":10.0,\"unit\":\"piece\",\"item\":\"eggs\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hey, add 1.5 kg of strawberries, buy 300 grams broccoli and need 300 grams semolina.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"strawberries\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"broccoli\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"semolina\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, get 2.5 kg pistachios, grab 1 kg of jaggery, and need 250 g of garlic.",
+    "output": "<json>\n[{\"qty\":2.5,\"unit\":\"kg\",\"item\":\"pistachios\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"garlic\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hello, please add 750 grams mint leaves, get half a liter of milk and pick up a couple of of baking soda.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"mint leaves\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"milk\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"baking soda\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: note, please add 0.5 kg of carrots, i need 300 grams garlic, pick up 2 kg of lemons, grab 200 g of green peas; and pick up 350 g of sugar.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"carrots\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"garlic\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"lemons\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"green peas\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"sugar\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hello, please add a couple of bay leaves; and a couple of of bread.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"bay leaves\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"bread\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hello, add 1.5 kg of lemons; and buy 6 coffee.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"lemons\"},{\"qty\":6.0,\"unit\":\"piece\",\"item\":\"coffee\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: by the way, grab a dozen yogurt, a couple of of toothbrush, i need 5 of cloves, i need 4 butter and i need 2 kg of mint leaves.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"yogurt\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"toothbrush\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cloves\"},{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"butter\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"mint leaves\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: good morning, get a dozen of biscuits, 4 cream, and need 1.5 kg of rice.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"biscuits\"},{\"qty\":4.0,\"unit\":\"piece\",\"item\":\"cream\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"rice\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: hello, buy 2 kg of tomatoes, please add a dozen of yeast, and add 3 kg of paneer.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"tomatoes\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"yeast\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"paneer\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: good morning, 3 kg mushrooms; and 2 of cream.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"mushrooms\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cream\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: good morning, buy a kilo of mustard seeds, 12 of yogurt, pick up 1.5 kg of potatoes and grab several bread.",
+    "output": "<json>\n[{\"qty\":1.0,\"unit\":\"kg\",\"item\":\"mustard seeds\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"yogurt\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"potatoes\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"bread\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, please add 750 grams carrots, buy a dozen cheese, grab 500 ml of groundnut oil, need a dozen of honey and get 750 grams of mustard seeds.",
+    "output": "<json>\n[{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"carrots\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"cheese\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"groundnut oil\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"honey\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"mustard seeds\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: hi, i need 5 cardamom, please add 3 kg mint leaves, grab a dozen of baking soda, 1.5 kg cauliflower and need a dozen of shampoo.",
+    "output": "<json>\n[{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"cardamom\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"mint leaves\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"cauliflower\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"shampoo\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Parse this shopping note: by the way, get 3 kg tomatoes, add 8 of butter, add 1000 ml olive oil, and add 2 kg of mustard seeds.",
+    "output": "<json>\n[{\"qty\":3,\"unit\":\"kg\",\"item\":\"tomatoes\"},{\"qty\":8.0,\"unit\":\"piece\",\"item\":\"butter\"},{\"qty\":1.0,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"mustard seeds\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: note, pick up 250 grams jaggery, i need a dozen of toothbrush, pick up 330 ml sunflower oil, and grab 350 g coriander powder.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"jaggery\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"toothbrush\"},{\"qty\":0.33,\"unit\":\"L\",\"item\":\"sunflower oil\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"coriander powder\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hey, please add a couple of of shampoo, buy 1.5 kg coriander powder, please add half a kilo sugar, and add 250 g oats.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"shampoo\"},{\"qty\":1.5,\"unit\":\"kg\",\"item\":\"coriander powder\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"sugar\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"oats\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: good morning, i need a dozen coconut, please add a dozen dishwashing liquid, grab a dozen of curd; and 750 grams turmeric.",
+    "output": "<json>\n[{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"coconut\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"dishwashing liquid\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"curd\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"turmeric\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hey, 200 g of mustard seeds and pick up 400 grams zucchini.",
+    "output": "<json>\n[{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"mustard seeds\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"zucchini\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: good morning, a liter buttermilk, please add 350 g coriander powder, need 750 grams of cabbage and please add 3 kg of dates.",
+    "output": "<json>\n[{\"qty\":1.0,\"unit\":\"L\",\"item\":\"buttermilk\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"coriander powder\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"cabbage\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"dates\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hey, grab 2 ghee, get 2 kg of cabbage, pick up 750 grams of potatoes, and add 1 kg spinach.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"ghee\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"cabbage\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"potatoes\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"spinach\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, please add 500 grams of flour, pick up 200 g of eggplant, pick up 3 kg of turmeric, pick up half a liter olive oil, and pick up 300 grams of cashews.",
+    "output": "<json>\n[{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"flour\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"eggplant\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"turmeric\"},{\"qty\":0.5,\"unit\":\"L\",\"item\":\"olive oil\"},{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"cashews\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: note, need 250 g papaya, and grab a couple of of toothpaste.",
+    "output": "<json>\n[{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"papaya\"},{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"toothpaste\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: note, pick up 10 of coconut, i need 250 ml juice and i need 900 grams of apples.",
+    "output": "<json>\n[{\"qty\":10.0,\"unit\":\"piece\",\"item\":\"coconut\"},{\"qty\":0.25,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"apples\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hello, i need 2 kg brown sugar, pick up 750 grams of flour, i need 900 grams cabbage; and get 1 kg cilantro.",
+    "output": "<json>\n[{\"qty\":2,\"unit\":\"kg\",\"item\":\"brown sugar\"},{\"qty\":0.75,\"unit\":\"kg\",\"item\":\"flour\"},{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"cabbage\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"cilantro\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: good morning, need 1.5 liters of juice, pick up several of baking soda, buy 350 g semolina, and pick up 1 kg beetroot.",
+    "output": "<json>\n[{\"qty\":1.5,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":5.0,\"unit\":\"piece\",\"item\":\"baking soda\"},{\"qty\":0.35,\"unit\":\"kg\",\"item\":\"semolina\"},{\"qty\":1,\"unit\":\"kg\",\"item\":\"beetroot\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Please make a list from: hi, pick up a couple of of butter, grab a dozen of tea, get 1 liters of milk; and grab 2 kg of broccoli.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"butter\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"tea\"},{\"qty\":1,\"unit\":\"L\",\"item\":\"milk\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"broccoli\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: hey, grab 300 grams of carrots, get 200 g onions and grab 500 grams of oranges.",
+    "output": "<json>\n[{\"qty\":0.3,\"unit\":\"kg\",\"item\":\"carrots\"},{\"qty\":0.2,\"unit\":\"kg\",\"item\":\"onions\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"oranges\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: good morning, please add 2 of cream, buy 400 grams of beetroot, add 200 ml juice, i need 250 grams of chickpeas; and add 3 kg of green peas.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cream\"},{\"qty\":0.4,\"unit\":\"kg\",\"item\":\"beetroot\"},{\"qty\":0.2,\"unit\":\"L\",\"item\":\"juice\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"chickpeas\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"green peas\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Make a structured list from: good morning, buy 900 grams mushrooms and pick up 250 g sweet corn.",
+    "output": "<json>\n[{\"qty\":0.9,\"unit\":\"kg\",\"item\":\"mushrooms\"},{\"qty\":0.25,\"unit\":\"kg\",\"item\":\"sweet corn\"}]\n</json>"
+  },
+  {
+    "input": "Convert this to list: Turn this into a list: hey, need a couple of of cinnamon, need 3 kg of sweet corn, 2 kg semolina, a dozen of dishwashing liquid; and need half a kilo mustard seeds.",
+    "output": "<json>\n[{\"qty\":2.0,\"unit\":\"piece\",\"item\":\"cinnamon\"},{\"qty\":3,\"unit\":\"kg\",\"item\":\"sweet corn\"},{\"qty\":2,\"unit\":\"kg\",\"item\":\"semolina\"},{\"qty\":12.0,\"unit\":\"piece\",\"item\":\"dishwashing liquid\"},{\"qty\":0.5,\"unit\":\"kg\",\"item\":\"mustard seeds\"}]\n</json>"
+  }
+]
